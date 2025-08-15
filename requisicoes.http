@@ -2,7 +2,7 @@ POST http://localhost:3333/sessions
 Content-Type: application/json
 
 {
-  "email": "Yasmin_Oliveira49@yahoo.com",
+  "email": "Bernardo_Albuquerque5@hotmail.com",
   "password": "123456"
 }
 
@@ -10,6 +10,7 @@ Content-Type: application/json
 
 POST http://localhost:3333/courses
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwNWU5ODM2OC02NTdiLTQ2NDktYTc2YS04OTZjZjQ5MzUwYzAiLCJyb2xlIjoiTUFOQUdFUiIsImlhdCI6MTc1NTI5MzAwOCwiZXhwIjoxNzU1Mzc5NDA4fQ.dq6W4M9btlgE3Ky0kDQJSR3Hjj3oH0S0Z8M5-Oq88p0
 
 {
   "title": "Curso de React Native"
