@@ -1,3 +1,13 @@
+POST http://localhost:3333/sessions
+Content-Type: application/json
+
+{
+  "email": "Yasmin_Oliveira49@yahoo.com",
+  "password": "123456"
+}
+
+###
+
 POST http://localhost:3333/courses
 Content-Type: application/json
 
@@ -11,14 +21,7 @@ GET http://localhost:3333/courses?orderBy=title
 
 ###
 
-GET http://localhost:3333/courses/84a2fc12-347e-4883-9a78-1c577362fea7
+GET http://localhost:3333/courses/30d75132-01f3-43ad-bfbf-499a0822e87e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MTA5MjhlYy02MTJiLTRiZmYtYjVjOS0wMzQ0MTkyOTAwMDEiLCJyb2xlIjoiTUFOQUdFUiIsImlhdCI6MTc1NTI4NDg2MSwiZXhwIjoxNzU1MzcxMjYxfQ.B__XiRrP0T_nqz-wfocRsmPptj8pzQbYFMULYthdP8k
 
 ###
-
-POST http://localhost:3333/sessions
-Content-Type: application/json
-
-{
-  "email": "Yasmin_Oliveira49@yahoo.com",
-  "password": "123456"
-}

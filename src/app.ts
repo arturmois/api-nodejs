@@ -3,7 +3,6 @@ import {
   validatorCompiler,
   serializerCompiler,
   type ZodTypeProvider,
-  jsonSchemaTransform,
 } from "fastify-type-provider-zod";
 import { fastifySwagger } from "@fastify/swagger";
 import scalarAPIReference from "@scalar/fastify-api-reference";
