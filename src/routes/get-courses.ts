@@ -4,7 +4,7 @@ import { courses, enrollments } from "../database/schema.ts";
 import { z } from "zod";
 import { and, asc, count, eq, ilike, type SQL } from "drizzle-orm";
 
-export const getCourses: FastifyPluginAsyncZod = async (server) => {
+export const getCoursesRoute: FastifyPluginAsyncZod = async (server) => {
   server.get(
     "/courses",
     {

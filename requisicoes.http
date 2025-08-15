@@ -12,3 +12,13 @@ GET http://localhost:3333/courses?orderBy=title
 ###
 
 GET http://localhost:3333/courses/84a2fc12-347e-4883-9a78-1c577362fea7
+
+###
+
+POST http://localhost:3333/sessions
+Content-Type: application/json
+
+{
+  "email": "Yasmin_Oliveira49@yahoo.com",
+  "password": "123456"
+}

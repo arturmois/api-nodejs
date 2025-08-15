@@ -7,9 +7,10 @@ import {
 } from "fastify-type-provider-zod";
 import { fastifySwagger } from "@fastify/swagger";
 import scalarAPIReference from "@scalar/fastify-api-reference";
-import { createCourse } from "./routes/create-course.ts";
-import { getCourseById } from "./routes/get-course-by-id.ts";
-import { getCourses } from "./routes/get-courses.ts";
+import { createCourseRoute } from "./routes/create-course.ts";
+import { getCourseByIdRoute } from "./routes/get-course-by-id.ts";
+import { getCoursesRoute } from "./routes/get-courses.ts";
+import { loginRoute } from "./routes/login.ts";
 
 const server = fastify({
   logger: {
@@ -40,8 +41,9 @@ if (process.env.NODE_ENV === "development") {
 server.setValidatorCompiler(validatorCompiler);
 server.setSerializerCompiler(serializerCompiler);
 
-server.register(createCourse);
-server.register(getCourseById);
-server.register(getCourses);
+server.register(createCourseRoute);
+server.register(getCourseByIdRoute);
+server.register(getCoursesRoute);
+server.register(loginRoute);
 
 export { server };

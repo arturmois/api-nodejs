@@ -3,7 +3,7 @@ import { db } from "../database/client.ts";
 import { type FastifyPluginAsyncZod } from "fastify-type-provider-zod";
 import { courses } from "../database/schema.ts";
 
-export const createCourse: FastifyPluginAsyncZod = async (server) => {
+export const createCourseRoute: FastifyPluginAsyncZod = async (server) => {
   server.post(
     "/courses",
     {
