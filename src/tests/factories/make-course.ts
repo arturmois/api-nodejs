@@ -1,0 +1,14 @@
+import { faker } from "@faker-js/faker";
+import { db } from "../../database/client.ts";
+import { courses } from "../../database/schema.ts";
+
+export const makeCourse = async (title?: string) => {
+  const result = await db
+    .insert(courses)
+    .values({
+      title: title ?? faker.lorem.sentence(),
+      description: faker.lorem.sentence(),
+    })
+    .returning();
+  return result[0];
+};

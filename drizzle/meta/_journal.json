@@ -8,6 +8,34 @@
       "when": 1755262574681,
       "tag": "0000_premium_jackal",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1755267150751,
+      "tag": "0001_clean_hulk",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1755267232540,
+      "tag": "0002_skinny_elektra",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1755268474335,
+      "tag": "0003_eminent_warlock",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1755268651048,
+      "tag": "0004_absent_galactus",
+      "breakpoints": true
     }
   ]
 }
